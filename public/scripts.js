@@ -5,7 +5,7 @@
 //const { response } = require("express");
 
 
-const apiUrl = 'http://localhost:3000';//'http://jcgigena.alwaysdata.net';//`${HOST}:${PORT}`;//;
+const apiUrl ='http://jcgigena.alwaysdata.net';// 'http://localhost:3000';//'http://jcgigena.alwaysdata.net';//`${HOST}:${PORT}`;//;
 
 //Productos
 
@@ -128,7 +128,7 @@ async function listaTipoProducto() {
             data.forEach(produc => {
                 const option = document.createElement('option');
                 option.text = produc.nombre;
-                option.value = produc.idtipoproductos;
+                option.value = produc.idtipoproducto;
                 tipoproducList.appendChild(option);
             });
 

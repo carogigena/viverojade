@@ -28,7 +28,7 @@ const ObtenerProductoPorId = (req,res) =>
 const crearProducto = (req,res) => 
 {
     const {descripcion,nombre,precio,stock,link_img,tipoproducto_idtipoproducto} = req.body;
-    
+    console.log(descripcion,nombre,precio,stock,link_img,tipoproducto_idtipoproducto);
     const sql = 'INSERT INTO productos (nombre,descripcion,precio,stock,link_img,tipoproducto_idtipoproducto) VALUES (?,?,?,?,?,?)';
 
     db.query(sql,[nombre,descripcion,precio,stock,link_img,tipoproducto_idtipoproducto], (err,result) => 
